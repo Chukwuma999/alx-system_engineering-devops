@@ -3,6 +3,7 @@
 # (To be run in Docker container; else revert hostfile back)
 # https://web.archive.org/web/20171117023601/http://blog.jonathanargentiero.com/docker-sed-cannot-rename-etcsedl8ysxl-device-or-resource-busy/
 
-sudo sed -i -e 's/127.0.0.1 localhost/127.0.0.2 localhost/g' /etc/hosts
-echo -e "8.8.8.8\tfacebook.com" >> //etc/hosts
+cp /etc/hosts hosts_tmp
+sed -i s/127.*$/127.0.0.2\\tlocalhost\\n8.8.8.8\\tfacebook.com/g hosts_tmp
+cp -f hosts_tmp /etc/hosts
 
