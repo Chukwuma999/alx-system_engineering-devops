@@ -16,7 +16,7 @@ Files that start with:
 * Language: Bash scripts
 * OS: Ubuntu 14.04 LTS
 * Container: Docker
-* Web Servers: Nginx; (338-lb-01: ssh ubuntu@104.196.27.36); (338-web-01: ssh ubuntu@35.229.54.225); (338-web-02: ssh ubuntu@35.231.225.251)
+* Web Servers: Nginx; (lb-01: ssh ubuntu@3.239.59.226); [STUDENT_ID]-web-01: ssh ubuntu@44.192.54.234); [STUDENT_ID]-web-02: ssh ubuntu@3.235.20.142)
 * Style guidelines: [Shellscript for Bash](https://github.com/koalaman/shellcheck)
 ---
 ### Authors
