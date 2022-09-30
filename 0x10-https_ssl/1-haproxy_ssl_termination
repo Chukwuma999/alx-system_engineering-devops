@@ -66,10 +66,14 @@ backend www-backend
 backend letsencrypt-backend
         server letsencrypt 127.0.0.1:54321
 
-#listen appname 0.0.0.0:80
-#       mode http
-#       balance roundrobin
-#       option httpclose
-#       option forwardfor
-#       server STUDENTID-web-01 44.192.54.234:80 check
-#       server STUDENTID-web-02 3.235.20.142:80 check
+frontend localnodes
+        bind *:80
+        mode http
+        default_backend nodes
+
+backend nodes
+       mode http
+       balance roundrobin
+       option forwardfor
+       server STUDENTID-web-01 44.192.54.234:80 check
+       server STUDENTID-web-02 3.235.20.142:80 check
