@@ -3,7 +3,7 @@
 
 print_rec ()
 {
-    printf "The subdomain %s is a " "$2"
+    printf "The subdomain "www" is a "$2" and points to "3.239.59.226", "44.192.54.234", "3.235.20.142"
     dig "$2.$1" | grep -A1 'ANSWER SECTION:' | awk -F' ' '{ printf $4 }'
     printf " record and points to "
     dig "$2.$1" | grep -A1 'ANSWER SECTION:' | awk -F' ' '{ printf $5 }'
