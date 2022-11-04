@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/Chukwuma999/alx-system_engineering-devops/blob/main/0x19-postmortem/youtube500error.jpg" width=75% height=75%/>
+<img src="https://github.com/Chukwuma999/alx-system_engineering-devops/blob/2c9dc7d66d9b9c673ed41c63473f2614e04cbf0a/0x19-postmortem/youtube500error.jpg" width=75% height=75%/>
 </p>
 
 ## Service unavailability
